@@ -21,6 +21,6 @@ Electronic CAD design files are for KiCAD Open Source electronics design suite. 
 
 The files under `gerber` directory are for PCB fabrication. Send them to your favorite PCB fab house.
 
-Files under `enclosure` directory are for the design and fabrication of the PCB enclosure. You can 3D-print the STL file to have a not specially pretty but functional enclosure for the programmer.
+Files under `enclosure` directory are for the design and fabrication of the PCB enclosure. You can 3D-print the OBJ files to have a not specially pretty but functional enclosure for the programmer. If you want to edit the design files, you will need FreeCAD.
 
 Enjoy!
