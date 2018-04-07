@@ -1,35 +1,4 @@
-EESchema Schematic File Version 2
-LIBS:mega-prog-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:doragasu
+EESchema Schematic File Version 4
 LIBS:mega-prog-cache
 EELAYER 26 0
 EELAYER END
@@ -46,19 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L USB_B P1
-U 1 1 562297B1
-P 2150 2050
-F 0 "P1" H 2150 2500 50  0000 C CNN
-F 1 "USB_B" H 2150 2400 50  0000 C CNN
-F 2 "Connect:USB_B" V 2100 1950 60  0001 C CNN
-F 3 "" V 2100 1950 60  0000 C CNN
-F 4 "E8144-B02022-L" H 2150 2050 60  0001 C CNN "manf#"
-	1    2150 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L AT90USB646 U1
+L doragasu:AT90USB646 U1
 U 1 1 56229C20
 P 4500 3700
 F 0 "U1" H 3450 6450 60  0000 C CNN
@@ -70,18 +27,18 @@ F 4 "AT90USB646-AUR" H 4500 3700 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 56229D9A
-P 2050 2450
-F 0 "#PWR01" H 2050 2200 50  0001 C CNN
-F 1 "GND" H 2050 2300 50  0001 C CNN
-F 2 "" H 2050 2450 60  0000 C CNN
-F 3 "" H 2050 2450 60  0000 C CNN
-	1    2050 2450
+P 2050 2550
+F 0 "#PWR01" H 2050 2300 50  0001 C CNN
+F 1 "GND" H 2050 2400 50  0001 C CNN
+F 2 "" H 2050 2550 60  0000 C CNN
+F 3 "" H 2050 2550 60  0000 C CNN
+	1    2050 2550
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR02
+L power:VCC #PWR02
 U 1 1 56229E2E
 P 3100 1750
 F 0 "#PWR02" H 3100 1600 50  0001 C CNN
@@ -96,7 +53,7 @@ D-
 Text Label 2450 2150 0    60   ~ 0
 D+
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 5622A1B4
 P 4500 6650
 F 0 "#PWR03" H 4500 6400 50  0001 C CNN
@@ -107,7 +64,7 @@ F 3 "" H 4500 6650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR04
+L power:VCC #PWR04
 U 1 1 5622A28F
 P 4500 750
 F 0 "#PWR04" H 4500 600 50  0001 C CNN
@@ -118,7 +75,7 @@ F 3 "" H 4500 750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L device:R R3
 U 1 1 5622A453
 P 3150 1200
 F 0 "R3" V 3230 1200 50  0000 C CNN
@@ -130,7 +87,7 @@ F 4 "RMCF0805JT47K0" V 3150 1200 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR05
+L power:VCC #PWR05
 U 1 1 5622A544
 P 3150 1050
 F 0 "#PWR05" H 3150 900 50  0001 C CNN
@@ -141,7 +98,7 @@ F 3 "" H 3150 1050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Crystal Y1
+L device:Crystal Y1
 U 1 1 5622A5C8
 P 2950 3150
 F 0 "Y1" H 2950 3300 50  0000 C CNN
@@ -153,7 +110,7 @@ F 4 "ABL-8.000MHZ-B2" H 2950 3150 60  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L C C3
+L device:C C3
 U 1 1 5622A700
 P 2600 3000
 F 0 "C3" H 2625 3100 50  0000 L CNN
@@ -165,7 +122,7 @@ F 4 "CL10C220JB8NNWC" H 2600 3000 60  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C4
+L device:C C4
 U 1 1 5622A82F
 P 2600 3300
 F 0 "C4" H 2625 3400 50  0000 L CNN
@@ -176,7 +133,7 @@ F 3 "" H 2600 3300 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 5622A8A5
 P 2350 3400
 F 0 "#PWR06" H 2350 3150 50  0001 C CNN
@@ -187,7 +144,7 @@ F 3 "" H 2350 3400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L device:C C2
 U 1 1 5622A9A5
 P 2350 2800
 F 0 "C2" H 2300 2900 50  0000 R CNN
@@ -199,7 +156,7 @@ F 4 "CL21B105KOFNNNG" H 2350 2800 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C6
+L device:C C6
 U 1 1 5622B030
 P 3500 7250
 F 0 "C6" H 3450 7350 50  0000 R CNN
@@ -210,7 +167,7 @@ F 3 "" H 3500 7250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C7
+L device:C C7
 U 1 1 5622B1B3
 P 3800 7250
 F 0 "C7" H 3750 7350 50  0000 R CNN
@@ -221,7 +178,7 @@ F 3 "" H 3800 7250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C8
+L device:C C8
 U 1 1 5622B1E9
 P 4100 7250
 F 0 "C8" H 4050 7350 50  0000 R CNN
@@ -232,7 +189,7 @@ F 3 "" H 4100 7250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR07
+L power:GND #PWR07
 U 1 1 5622B310
 P 3800 7450
 F 0 "#PWR07" H 3800 7200 50  0001 C CNN
@@ -243,7 +200,7 @@ F 3 "" H 3800 7450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR08
+L power:VCC #PWR08
 U 1 1 5622B452
 P 3800 7050
 F 0 "#PWR08" H 3800 6900 50  0001 C CNN
@@ -498,7 +455,7 @@ D14
 Text Label 7100 5000 2    60   ~ 0
 D15
 $Comp
-L GND #PWR09
+L power:GND #PWR09
 U 1 1 5622E690
 P 8800 1850
 F 0 "#PWR09" H 8800 1600 50  0001 C CNN
@@ -509,7 +466,7 @@ F 3 "" H 8800 1850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR010
+L power:VCC #PWR010
 U 1 1 5622E892
 P 8800 1150
 F 0 "#PWR010" H 8800 1000 50  0001 C CNN
@@ -550,37 +507,37 @@ NoConn ~ 8700 3000
 NoConn ~ 8700 2700
 NoConn ~ 8700 2400
 $Comp
-L C C1
+L device:C C1
 U 1 1 5623078D
-P 1700 2150
-F 0 "C1" H 1725 2250 50  0000 L CNN
-F 1 "6.8u" H 1725 2050 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:Capacitor5x11RM2.5" H 1738 2000 30  0001 C CNN
-F 3 "" H 1700 2150 60  0000 C CNN
-F 4 "865080440001" H 1700 2150 60  0001 C CNN "manf#"
-	1    1700 2150
+P 1550 2150
+F 0 "C1" H 1575 2250 50  0000 L CNN
+F 1 "6.8u" H 1575 2050 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:Capacitor5x11RM2.5" H 1588 2000 30  0001 C CNN
+F 3 "" H 1550 2150 60  0000 C CNN
+F 4 "865080440001" H 1550 2150 60  0001 C CNN "manf#"
+	1    1550 2150
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L power:GND #PWR011
 U 1 1 56230BD6
-P 1700 2300
-F 0 "#PWR011" H 1700 2050 50  0001 C CNN
-F 1 "GND" H 1700 2150 50  0001 C CNN
-F 2 "" H 1700 2300 60  0000 C CNN
-F 3 "" H 1700 2300 60  0000 C CNN
-	1    1700 2300
+P 1550 2300
+F 0 "#PWR011" H 1550 2050 50  0001 C CNN
+F 1 "GND" H 1550 2150 50  0001 C CNN
+F 2 "" H 1550 2300 60  0000 C CNN
+F 3 "" H 1550 2300 60  0000 C CNN
+	1    1550 2300
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR012
+L power:VCC #PWR012
 U 1 1 56230C05
-P 1700 2000
-F 0 "#PWR012" H 1700 1850 50  0001 C CNN
-F 1 "VCC" H 1700 2150 50  0000 C CNN
-F 2 "" H 1700 2000 60  0000 C CNN
-F 3 "" H 1700 2000 60  0000 C CNN
-	1    1700 2000
+P 1550 2000
+F 0 "#PWR012" H 1550 1850 50  0001 C CNN
+F 1 "VCC" H 1550 2150 50  0000 C CNN
+F 2 "" H 1550 2000 60  0000 C CNN
+F 3 "" H 1550 2000 60  0000 C CNN
+	1    1550 2000
 	1    0    0    -1  
 $EndComp
 Text Label 5800 5600 0    60   ~ 0
@@ -680,7 +637,7 @@ LED2
 Text Label 5800 2700 0    60   ~ 0
 SW
 $Comp
-L LED D2
+L device:LED D2
 U 1 1 5623373E
 P 5250 7450
 F 0 "D2" H 5250 7550 50  0000 C CNN
@@ -692,7 +649,7 @@ F 4 "LTL2R3KGD-EM" H 5250 7450 60  0001 C CNN "manf#"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L LED D1
+L device:LED D1
 U 1 1 56233B72
 P 5250 7150
 F 0 "D1" H 5250 7250 50  0000 C CNN
@@ -704,19 +661,7 @@ F 4 "LTL2R3KRD-EM" H 5250 7150 60  0001 C CNN "manf#"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW1
-U 1 1 5623493E
-P 5550 6850
-F 0 "SW1" H 5700 6960 50  0000 C CNN
-F 1 "SW_PUSH" H 5550 6770 50  0000 C CNN
-F 2 "Discret:SW_PUSH_SMALL" H 5550 6850 60  0001 C CNN
-F 3 "" H 5550 6850 60  0000 C CNN
-F 4 "3-1825910-1" H 5550 6850 60  0001 C CNN "manf#"
-	1    5550 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R4
+L device:R R4
 U 1 1 56234EDC
 P 5600 7150
 F 0 "R4" V 5680 7150 50  0000 C CNN
@@ -728,7 +673,7 @@ F 4 "RMCF0805JT220R" V 5600 7150 60  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L R R5
+L device:R R5
 U 1 1 56234F6F
 P 5600 7450
 F 0 "R5" V 5680 7450 50  0000 C CNN
@@ -739,7 +684,7 @@ F 3 "" H 5600 7450 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR013
+L power:GND #PWR013
 U 1 1 56235728
 P 5200 6900
 F 0 "#PWR013" H 5200 6650 50  0001 C CNN
@@ -750,7 +695,7 @@ F 3 "" H 5200 6900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C5
+L device:C C5
 U 1 1 5623717B
 P 3150 3900
 F 0 "C5" H 3175 4000 50  0000 L CNN
@@ -761,7 +706,7 @@ F 3 "" H 3150 3900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L power:GND #PWR014
 U 1 1 56237322
 P 3150 4050
 F 0 "#PWR014" H 3150 3800 50  0001 C CNN
@@ -772,7 +717,7 @@ F 3 "" H 3150 4050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L device:R R1
 U 1 1 56237B6B
 P 2850 2000
 F 0 "R1" V 2930 2000 50  0000 C CNN
@@ -784,7 +729,7 @@ F 4 "RMCF0805JT22R0CT-ND" V 2850 2000 60  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L R R2
+L device:R R2
 U 1 1 56237C84
 P 2850 2200
 F 0 "R2" V 2930 2200 50  0000 C CNN
@@ -795,7 +740,7 @@ F 3 "" H 2850 2200 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C9
+L device:C C9
 U 1 1 56238FDE
 P 8800 1450
 F 0 "C9" H 8825 1550 50  0000 L CNN
@@ -806,7 +751,7 @@ F 3 "" H 8800 1450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C10
+L device:C C10
 U 1 1 562390E4
 P 9100 1450
 F 0 "C10" H 9125 1550 50  0000 L CNN
@@ -819,7 +764,7 @@ $EndComp
 Text Label 3200 3300 2    60   ~ 0
 CLK
 $Comp
-L VCC #PWR015
+L power:VCC #PWR015
 U 1 1 5623B854
 P 5000 7100
 F 0 "#PWR015" H 5000 6950 50  0001 C CNN
@@ -834,7 +779,7 @@ MCU has internal pullup for the SW.
 Text Notes 1300 1200 0    60   ~ 0
 Maximum capacitance\naccording to USB spec:\n10 uF.
 $Comp
-L MD-CART-PORT P2
+L doragasu:MD-CART-PORT P2
 U 1 1 5624065A
 P 7900 3400
 F 0 "P2" H 7350 5850 60  0000 C CNN
@@ -843,18 +788,6 @@ F 2 "doragasu:GEN_CART_PORT" H 8350 2700 60  0001 C CNN
 F 3 "" H 8350 2700 60  0000 C CNN
 F 4 "1761469-1" H 7900 3400 60  0001 C CNN "manf#"
 	1    7900 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_02X03 P3
-U 1 1 56247CF8
-P 10100 5550
-F 0 "P3" H 10100 5750 50  0000 C CNN
-F 1 "CONN_02X03" H 10100 5350 50  0001 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 10100 4350 60  0001 C CNN
-F 3 "" H 10100 4350 60  0000 C CNN
-F 4 "M20-9760346" H 10100 5550 60  0001 C CNN "manf#"
-	1    10100 5550
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
@@ -866,7 +799,7 @@ Entry Wire Line
 Text Label 9850 5450 2    60   ~ 0
 ~C_RST~/MISO
 $Comp
-L VCC #PWR016
+L power:VCC #PWR016
 U 1 1 5624A315
 P 10400 5400
 F 0 "#PWR016" H 10400 5250 50  0001 C CNN
@@ -881,7 +814,7 @@ Text Label 9850 5550 2    60   ~ 0
 Text Label 9850 5900 2    60   ~ 0
 ~AS~/MOSI
 $Comp
-L GND #PWR017
+L power:GND #PWR017
 U 1 1 5624B08A
 P 10400 5700
 F 0 "#PWR017" H 10400 5450 50  0001 C CNN
@@ -915,7 +848,7 @@ Text Label 3000 2200 0    60   ~ 0
 Dm+
 NoConn ~ 5800 5200
 $Comp
-L Crystal Y2
+L device:Crystal Y2
 U 1 1 56C2C24B
 P 1700 7000
 F 0 "Y2" H 1700 7150 50  0000 C CNN
@@ -926,7 +859,7 @@ F 3 "" H 1700 7000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C12
+L device:C C12
 U 1 1 56C2C318
 P 1250 7250
 F 0 "C12" H 1275 7350 50  0000 L CNN
@@ -937,7 +870,7 @@ F 3 "" H 1250 7250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C13
+L device:C C13
 U 1 1 56C2C3E0
 P 2150 7250
 F 0 "C13" H 2175 7350 50  0000 L CNN
@@ -948,7 +881,7 @@ F 3 "" H 2150 7250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR018
+L power:GND #PWR018
 U 1 1 56C2CCCE
 P 1250 7450
 F 0 "#PWR018" H 1250 7200 50  0001 C CNN
@@ -959,7 +892,7 @@ F 3 "" H 1250 7450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L power:GND #PWR019
 U 1 1 56C2CD2D
 P 2150 7450
 F 0 "#PWR019" H 2150 7200 50  0001 C CNN
@@ -970,7 +903,7 @@ F 3 "" H 2150 7450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C11
+L device:C C11
 U 1 1 56C2D8F2
 P 850 7000
 F 0 "C11" H 800 7100 50  0000 R CNN
@@ -982,7 +915,7 @@ F 4 "CL21B104MBCNNNC" H 850 7000 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR020
+L power:GND #PWR020
 U 1 1 56C2DBF1
 P 850 7200
 F 0 "#PWR020" H 850 6950 50  0001 C CNN
@@ -993,7 +926,7 @@ F 3 "" H 850 7200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR021
+L power:VCC #PWR021
 U 1 1 56C2DC70
 P 850 6800
 F 0 "#PWR021" H 850 6650 50  0001 C CNN
@@ -1004,7 +937,7 @@ F 3 "" H 850 6800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74LVC2G14 U2
+L doragasu:74LVC2G14 U2
 U 1 1 56C373C1
 P 1700 6350
 F 0 "U2" H 1700 6687 60  0000 C CNN
@@ -1016,7 +949,7 @@ F 4 "74LVC2G14W6-7" H 1700 6350 60  0001 C CNN "#manf"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74LVC2G14 U2
+L doragasu:74LVC2G14 U2
 U 2 1 56C37750
 P 2600 6350
 F 0 "U2" H 2600 6687 60  0000 C CNN
@@ -1027,24 +960,19 @@ F 3 "" H 2600 6350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 2050 2650 2050
-Wire Wire Line
-	2450 2150 2650 2150
+	2350 2150 2650 2150
 Wire Wire Line
 	3100 1750 3100 1800
 Wire Wire Line
-	2450 1800 3200 1800
+	2400 1800 3100 1800
 Connection ~ 3100 1800
 Wire Wire Line
-	2450 2450 2050 2450
-Connection ~ 2050 2450
-Wire Wire Line
-	4400 6600 4600 6600
+	4400 6600 4500 6600
 Connection ~ 4500 6600
 Wire Wire Line
 	4500 6600 4500 6650
 Wire Wire Line
-	4350 800  4650 800 
+	4350 800  4450 800 
 Connection ~ 4450 800 
 Connection ~ 4550 800 
 Wire Wire Line
@@ -1053,15 +981,15 @@ Connection ~ 4500 800
 Wire Wire Line
 	3150 1350 3150 1400
 Wire Wire Line
-	2750 3000 3200 3000
+	2750 3000 2950 3000
 Wire Wire Line
-	2750 3300 3200 3300
+	2750 3300 2950 3300
 Connection ~ 2950 3000
 Connection ~ 2950 3300
 Wire Wire Line
 	2450 3000 2350 3000
 Wire Wire Line
-	2350 2950 2350 3400
+	2350 2950 2350 3000
 Wire Wire Line
 	2450 3300 2350 3300
 Connection ~ 2350 3300
@@ -1071,10 +999,10 @@ Wire Wire Line
 Wire Wire Line
 	2350 2600 3200 2600
 Wire Wire Line
-	3500 7100 4100 7100
+	3500 7100 3800 7100
 Connection ~ 3800 7100
 Wire Wire Line
-	3500 7400 4100 7400
+	3500 7400 3800 7400
 Connection ~ 3800 7400
 Wire Wire Line
 	3800 7450 3800 7400
@@ -1272,9 +1200,9 @@ Wire Wire Line
 Wire Wire Line
 	9100 6100 6550 6100
 Wire Wire Line
-	8700 1600 9100 1600
+	8700 1600 8800 1600
 Wire Wire Line
-	8800 1600 8800 1850
+	8800 1600 8800 1700
 Wire Wire Line
 	8700 1700 8800 1700
 Connection ~ 8800 1700
@@ -1282,9 +1210,9 @@ Wire Wire Line
 	8700 1800 8800 1800
 Connection ~ 8800 1800
 Wire Wire Line
-	8700 1300 9100 1300
+	8700 1300 8800 1300
 Wire Wire Line
-	8800 1150 8800 1300
+	8800 1150 8800 1200
 Wire Wire Line
 	8700 1200 8800 1200
 Connection ~ 8800 1200
@@ -1301,22 +1229,20 @@ Wire Wire Line
 Wire Wire Line
 	5800 2700 6350 2700
 Wire Wire Line
-	6350 6850 5850 6850
+	6350 6850 5750 6850
 Wire Wire Line
 	5800 2600 6350 2600
 Wire Wire Line
 	6350 7150 5750 7150
 Wire Wire Line
 	6350 7450 5750 7450
-Wire Bus Line
-	6450 1100 6450 7550
 Wire Wire Line
 	5000 7450 5100 7450
 Connection ~ 5000 7150
 Wire Wire Line
 	5200 6900 5200 6850
 Wire Wire Line
-	5200 6850 5250 6850
+	5200 6850 5350 6850
 Wire Wire Line
 	3150 3750 3150 3700
 Wire Wire Line
@@ -1338,15 +1264,13 @@ Wire Wire Line
 Connection ~ 8800 1300
 Connection ~ 8800 1600
 Wire Wire Line
-	5000 7100 5000 7450
+	5000 7100 5000 7150
 Wire Wire Line
 	5000 7150 5100 7150
 Wire Wire Line
 	5800 2500 6350 2500
 Wire Bus Line
 	9200 6400 6450 6400
-Wire Bus Line
-	9200 5550 9200 6400
 Wire Wire Line
 	9850 5450 9300 5450
 Wire Wire Line
@@ -1368,7 +1292,7 @@ Wire Wire Line
 Wire Wire Line
 	10500 5900 9300 5900
 Wire Wire Line
-	1250 6350 1250 7100
+	1250 6350 1250 6700
 Wire Wire Line
 	1550 7000 1250 7000
 Connection ~ 1250 7000
@@ -1387,12 +1311,12 @@ Wire Wire Line
 Wire Wire Line
 	850  7200 850  7150
 Wire Wire Line
-	2150 6350 2150 7100
+	2150 6350 2150 6700
 Connection ~ 2150 7000
 Connection ~ 2150 6350
 Connection ~ 3150 1400
 Wire Wire Line
-	3000 1400 3200 1400
+	3000 1400 3150 1400
 Wire Wire Line
 	3000 1400 3000 550 
 Wire Wire Line
@@ -1406,7 +1330,7 @@ Wire Wire Line
 Wire Wire Line
 	5700 550  5700 1000
 $Comp
-L R R6
+L device:R R6
 U 1 1 56F58ED5
 P 1700 6700
 F 0 "R6" V 1600 6700 50  0000 C CNN
@@ -1432,14 +1356,112 @@ Entry Wire Line
 Entry Wire Line
 	6350 7450 6450 7550
 Text Notes 500  7700 0    60   ~ 0
-Secondary clock generator, used for in-cart UART chip
+Secondary clock generator. Currently unused.
 Wire Wire Line
 	5400 7150 5450 7150
 Wire Wire Line
 	5400 7450 5450 7450
 Wire Wire Line
-	2450 1800 2450 1850
+	2400 1800 2400 1950
 Wire Wire Line
-	2450 2400 2450 2450
-Connection ~ 2150 2450
+	3100 1800 3200 1800
+Wire Wire Line
+	4500 6600 4600 6600
+Wire Wire Line
+	4450 800  4500 800 
+Wire Wire Line
+	4550 800  4650 800 
+Wire Wire Line
+	4500 800  4550 800 
+Wire Wire Line
+	2950 3000 3200 3000
+Wire Wire Line
+	2950 3300 3200 3300
+Wire Wire Line
+	2350 3300 2350 3400
+Wire Wire Line
+	2350 3000 2350 3300
+Wire Wire Line
+	3800 7100 4100 7100
+Wire Wire Line
+	3800 7400 4100 7400
+Wire Wire Line
+	8800 1700 8800 1800
+Wire Wire Line
+	8800 1800 8800 1850
+Wire Wire Line
+	8800 1200 8800 1300
+Wire Wire Line
+	5000 7150 5000 7450
+Wire Wire Line
+	8800 1300 9100 1300
+Wire Wire Line
+	8800 1600 9100 1600
+Wire Wire Line
+	1250 7000 1250 7100
+Wire Wire Line
+	2150 7000 2150 7100
+Wire Wire Line
+	3150 1400 3200 1400
+Wire Wire Line
+	1250 6700 1250 7000
+Wire Wire Line
+	2150 6700 2150 7000
+$Comp
+L Connector:USB_B P1
+U 1 1 5AC9F56F
+P 2050 2150
+F 0 "P1" H 2105 2617 50  0000 C CNN
+F 1 "USB_B" H 2105 2526 50  0000 C CNN
+F 2 "Connect:USB_B" H 2200 2100 50  0001 C CNN
+F 3 "" H 2200 2100 50  0001 C CNN
+F 4 "E8144-B02022-L" H 2050 2150 50  0001 C CNN "manf#"
+	1    2050 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2050 2400 2250
+Wire Wire Line
+	2400 2250 2350 2250
+Wire Wire Line
+	2400 2050 2650 2050
+Wire Wire Line
+	2400 1950 2350 1950
+Wire Wire Line
+	2450 2550 2050 2550
+Wire Wire Line
+	2450 2400 2450 2550
+Wire Wire Line
+	2050 2550 1950 2550
+Connection ~ 2050 2550
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5AD2FE20
+P 5550 6850
+F 0 "SW1" H 5450 6950 50  0000 C CNN
+F 1 "SW_Push" H 5550 7044 50  0001 C CNN
+F 2 "Discret:SW_PUSH_SMALL" H 5550 7050 50  0001 C CNN
+F 3 "" H 5550 7050 50  0001 C CNN
+F 4 "3-1825910-1" H 5550 6850 50  0001 C CNN "manf#"
+	1    5550 6850
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	6450 6400 6450 7550
+Wire Bus Line
+	9200 5550 9200 6400
+Wire Bus Line
+	6450 1100 6450 6400
+$Comp
+L Connector:Conn_02x03_Odd_Even J?
+U 1 1 5AD4E662
+P 10050 5550
+F 0 "J?" H 10100 5775 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 10100 5776 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 10050 5550 50  0001 C CNN
+F 3 "~" H 10050 5550 50  0001 C CNN
+F 4 "M20-9760346" H 10050 5550 50  0001 C CNN "manf#"
+	1    10050 5550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
