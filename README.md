@@ -1,3 +1,7 @@
+# WARNING: THIS PROJECT HAS MOVED
+
+You can find the most recent version at the [mw-prog GitLab project page](https://gitlab.com/doragasu/mw-prog). This repository will be kept as is, and will not be updated anymore.
+
 # mw-prog
 MegaWiFi Programmer
 
